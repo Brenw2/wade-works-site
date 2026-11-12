@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wade Works LLC</title>
+  <meta name="description" content="Wade Works LLC builds small, useful apps and tools, including Sports Week and Tidylight.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%238B4A2E'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='16' font-weight='700' fill='%23F7F3EE'%3EW%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #f6f1ea;
+      --ink: #2a241c;
+      --muted: #6b6258;
+      --accent: #8b4a2e;
+      --accent-hover: #6f3a24;
+      --line: #e4dbd0;
+      --card: #fffbf7;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrap {
+      width: min(42rem, calc(100% - 2.5rem));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 4.5rem 0 2.5rem;
+    }
+
+    .mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.25rem;
+      height: 2.25rem;
+      margin-bottom: 1.25rem;
+      border-radius: 0.55rem;
+      background: var(--accent);
+      color: #f7f3ee;
+      font-family: Georgia, "Iowan Old Style", Palatino, "Times New Roman", serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      margin: 0 0 0.6rem;
+      font-family: Georgia, "Iowan Old Style", Palatino, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 2.6rem);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+
+    .tagline {
+      margin: 0;
+      max-width: 32rem;
+      color: var(--muted);
+      font-size: 1.125rem;
+    }
+
+    main {
+      flex: 1;
+      padding-bottom: 3.5rem;
+    }
+
+    section {
+      padding: 1.75rem 0;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 1.15rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .apps {
+      display: grid;
+      gap: 1rem;
+    }
+
+    article {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 0.85rem;
+      padding: 1.15rem 1.25rem;
+    }
+
+    article h3 {
+      margin: 0 0 0.35rem;
+      font-size: 1.15rem;
+      font-weight: 600;
+    }
+
+    article p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .soon {
+      display: inline-block;
+      margin-left: 0.4rem;
+      padding: 0.1rem 0.45rem;
+      border-radius: 999px;
+      background: #f0e4d8;
+      color: var(--accent);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      vertical-align: middle;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 0.15em;
+    }
+
+    a:hover { color: var(--accent-hover); }
+
+    address {
+      font-style: normal;
+      color: var(--muted);
+    }
+
+    address p { margin: 0 0 0.35rem; }
+
+    address a { color: var(--ink); }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 1.25rem 0 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    footer p { margin: 0; }
+
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mark" aria-hidden="true">W</div>
+      <h1>Wade Works LLC</h1>
+      <p class="tagline">We build small, useful apps and tools that make everyday life a little easier.</p>
+    </header>
+
+    <main>
+      <section aria-labelledby="apps-heading">
+        <h2 id="apps-heading">Our apps</h2>
+        <div class="apps">
+          <article>
+            <h3>Sports Week</h3>
+            <p>A sports schedule and scores app. Read the <a href="https://brenw2.github.io/sports-week-privacy/">Sports Week privacy policy</a>.</p>
+          </article>
+          <article>
+            <h3>Tidylight <span class="soon">Coming soon</span></h3>
+            <p>An ADD-friendly, collaborative app for home chores and fixes. Learn more at <a href="https://tidylight.app">tidylight.app</a>.</p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <address>
+          <p>Wade Works LLC<br>
+          5510 E Lowell Ave<br>
+          Indianapolis, IN 46219<br>
+          United States</p>
+          <p><a href="mailto:hello@wade-works.com">hello@wade-works.com</a></p>
+        </address>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Wade Works LLC &middot; <a href="privacy.html">Privacy</a></p>
+    </footer>
+  </div>
+</body>
+</html>
